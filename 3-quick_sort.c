@@ -45,8 +45,8 @@ int partition(int array[], size_t size, int start, int end)
 {
 	int i, j;
 	int *pivot = &array[end];
-	i = start;
 
+	i = start;
 	for (j = start; j < end; j++)
 	{
 		if (array[j] < *pivot)
@@ -69,7 +69,7 @@ int partition(int array[], size_t size, int start, int end)
 
 /**
  * partition_sort - Lomuto partition sort.
- * @array - array to be sorted
+ * @array: array to be sorted
  * @start: starting indx
  * @end: ending indx
  * @size: array size
