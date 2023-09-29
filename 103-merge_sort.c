@@ -25,7 +25,8 @@ void mg_sub(int *v_subar, int *buffer, size_t front, size_t mid,
 	print_array(v_subar + mid, back - mid);
 
 	for (vari = front, varj = mid; vari < mid && varj < back; vark++)
-		buffer[vark] = (v_subar[vari] < v_subar[varj]) ? v_subar[vari++] : v_subar[varj++];
+		buffer[vark] = (v_subar[vari] < v_subar[varj]) ?
+			v_subar[vari++] : v_subar[varj++];
 	for (; vari < mid; vari++)
 		buffer[vark++] = v_subar[vari];
 	for (; varj < back; varj++)
